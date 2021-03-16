@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+}
+
+.container {
+	max-width: 1100px;
+	margin: 0 auto;
+	/* overflow: auto */
+	padding: 10px 40px;
+}
+
+.card {
+	background-color: white;
+	color: #333;
+	border-radius: 10px;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+	padding: 20px;
+	margin: 10px;
+}
+
+/* Navbar */
+.navbar {
+	background-color: #05264c;
+	color: white;
+	height: 70px;
+}
+
+/* .navbar .container {
+	max-width: 1100px;
+	margin: 0 auto;
+	overflow: auto
+	padding: 10px 40px;
+} */
+
+/* Head */
+.head {
+	background-color: #05264c;
+	color: white;
+	height: 230px;
+}
+
+.head .grid {
+	display: grid;
+	grid-template-columns: 55% 45%;
+	gap: 30px;
+	overflow: visible;
+}
+
+.username-form .form-control {
+	margin: 30px 0;
+}
+
+.username-form input[type="text"] {
+	border: 0;
+	border-bottom: 1px solid #b4becb;
+	width: 100%;
+	padding: 3px;
+	font-size: 16px;
+	outline: none;
+}
+
+.btn {
+	display: inline-block;
+	padding: 10px 30px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	background-color: #05264c;
+	color: white;
+}
+#avatar {
+	justify-self: center;
+}
+
+img {
+	height: 200px;
+	justify-self: center;
+}
+
+/* Animation */
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
