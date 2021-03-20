@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
 * {
 	margin: 0;
 	padding: 0;
@@ -6,51 +7,62 @@
 }
 
 body {
-	font-family: "Lato", sans-serif;
+	font-family: "Lato", "sans-serif";
+	background-color: #05264c;
 }
 
 .container {
-	max-width: 1100px;
+	max-width: 1240px;
 	margin: 0 auto;
-	/* overflow: auto */
 	padding: 10px 40px;
 }
 
-.card {
+.card-head {
+	background-color: white;
+	color: #333;
+	border-radius: 10px;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+	padding: 20px;
+	margin: 40px;
+	max-height: 230px;
+}
+
+.card-followers {
 	background-color: white;
 	color: #333;
 	border-radius: 10px;
 	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 	padding: 20px;
 	margin: 10px;
+	width: 300px;
+	max-height: 208px;
+	overflow: auto;
 }
 
 /* Navbar */
 .navbar {
-	background-color: #05264c;
 	color: white;
 	height: 70px;
 }
 
-/* .navbar .container {
-	max-width: 1100px;
-	margin: 0 auto;
-	overflow: auto
-	padding: 10px 40px;
-} */
-
 /* Head */
 .head {
-	background-color: #05264c;
 	color: white;
 	height: 230px;
 }
 
 .head .grid {
 	display: grid;
-	grid-template-columns: 55% 45%;
-	gap: 30px;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 10px;
 	overflow: visible;
+	margin-top: -15px;
+}
+
+#followers {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .username-form .form-control {
@@ -75,8 +87,22 @@ body {
 	background-color: #05264c;
 	color: white;
 }
+
+.btn-primary {
+	display: inline-block;
+	padding: 10px 30px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	background-color: white;
+	color: #05264c;
+	font-size: 15px;
+	font-weight: bold;
+}
+
 #avatar {
 	justify-self: center;
+	margin-top: 40px;
 }
 
 img {
@@ -84,15 +110,81 @@ img {
 	justify-self: center;
 }
 
-/* Animation */
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+#repos-container {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	gap: 10px;
+	margin: 0 10px;
+	overflow: auto;
+	margin-top: 25px;
+	max-height: 300px;
+}
+
+.card-repos {
+	background-color: white;
+	color: #333;
+	border-radius: 10px;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+	padding: 20px;
+	margin: 10px;
+	word-wrap: break-word;
+}
+
+.repo-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: white;
+	margin-top: 100px;
+}
+
+.body .grid {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 50px;
+}
+
+.recent-activity {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: white;
+	margin-top: 100px;
+}
+
+#recent-act-container {
+	margin-top: 33px;
+}
+
+.recent-act-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.languages-card {
+	background-color: white;
+	color: #333;
+	border-radius: 10px;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+	padding: 20px;
+	margin: 10px;
+}
+
+.starcount-card {
+	background-color: white;
+	color: #333;
+	border-radius: 10px;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+	padding: 20px;
+	margin: 10px;
+}
+
+.forkcount-card {
+	background-color: white;
+	color: #333;
+	border-radius: 10px;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+	padding: 20px;
+	margin: 10px;
 }
