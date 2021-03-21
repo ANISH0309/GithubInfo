@@ -30,7 +30,7 @@ body {
 
 .card-head {
 	background-color: white;
-	color: #333;
+	color: black;
 	border-radius: 10px;
 	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 	padding: 20px;
@@ -41,7 +41,7 @@ body {
 
 .card-followers {
 	background-color: white;
-	color: #333;
+	color: black;
 	border-radius: 10px;
 	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 	padding: 20px;
@@ -127,7 +127,7 @@ img {
 
 .card-repos {
 	background-color: white;
-	color: #333;
+	color: black;
 	border-radius: 10px;
 	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 	padding: 20px;
@@ -171,7 +171,7 @@ img {
 
 .languages-card {
 	background-color: white;
-	color: #333;
+	color: black;
 	border-radius: 10px;
 	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 	padding: 20px;
@@ -180,7 +180,7 @@ img {
 
 .starcount-card {
 	background-color: white;
-	color: #333;
+	color: black;
 	border-radius: 10px;
 	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 	padding: 20px;
@@ -189,7 +189,7 @@ img {
 
 .forkcount-card {
 	background-color: white;
-	color: #333;
+	color: black;
 	border-radius: 10px;
 	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 	padding: 20px;
