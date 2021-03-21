@@ -10,16 +10,16 @@
 <body>
     <!-- Navbar -->
     <div class="navbar">
-        <div class="container">
+        <div class="container-nav">
             <h1>Github Info</h1>    
         </div>
     </div>
 
       <!-- Head Section-->
       <section class="head">
-        <div class="container grid">
+        <div class="container">
             <div class="username-form card-head">
-                <h2>Search for any user </h2>
+                <h2 class="form-head">Search for any user </h2>
                 <form id="myForm" autocomplete="off"">
                     <div class="form-control">
                         <input type="text" name='username' id="search" placeholder="Username" required>
@@ -36,8 +36,7 @@
     </section>
 
     <!-- Main Body -->
-    <section class="body">
-        <div class="grid">
+    <section class="main-body">
             <div class="repo-wrapper">
                 <h2 id="repos-heading"></h2>
                 <div id="repos-container"></div>
@@ -55,7 +54,6 @@
                     </div>
                 </div>
             </div>
-        </div>
     </section>
     <script src="script.js"></script>
 </body>
